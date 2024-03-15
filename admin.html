@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240315155839">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240315155839" />
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page admin-page">
+
+			<section class="admin-panel" data-fullscreen>
+				<div class="admin-panel__container">
+					<div class="mobile-top-box">
+						<img src="img/aiva-mobi.png" alt="">
+						<button type="button" class="menu__icon icon-menu mobile-top-btn"><i class="_icon-burger"></i></button>
+					</div>
+					<div data-tabs class="ap-tabs tabs">
+
+						<div class="ap-tabs__navigation-box">
+							<div class="ap-tabs__logo-box">
+								<img src="img/aiva-desc.png" alt="">
+							</div>
+							<nav data-tabs-titles class="ap-tabs__navigation tabs__navigation">
+								<button type="button" class="ap-tabs__title tabs__title _tab-active">Запуск генерации
+									задания</button>
+								<button type="button" class="ap-tabs__title tabs__title">Сотрудники</button>
+								<button type="button" class="ap-tabs__title tabs__title">Склад кроя</button>
+							</nav>
+							<div class="admin-exit-box">
+								<a href="#" class="admin-exit-link basic-button">
+									Выйты
+								</a>
+							</div>
+						</div>
+
+						<div data-tabs-body class="ap-tabs__content tabs__content">
+							<div class="ap-tabs__body tabs__body">
+								<div class="generations-box">
+									<div class="ap-tabs__body-heading">
+										<h2 class="ap-tabs__body-title">
+											Запуск генерации задания
+										</h2>
+									</div>
+									<div class="generations-center">
+										<div class="generations-center-box">
+											<p class="generations-data">
+												Последняя дата запуска генерации: <time>00/00/0000&nbsp00:00</time>
+											</p>
+											<p class="generations-status">Состояние:
+												<span>Отключено</span>
+												<!-- <span class="status-error">Ошибка</span> -->
+											</p>
+											<p class="generations-status-text">Ошибка:
+												<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+													incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+													ut
+													aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+													nulla pariatur.</span>
+											</p>
+										</div>
+									</div>
+									<div class="generations-bottom">
+										<div class="generations-btn-box">
+											<button class="generations-btn basic-button">
+												Вывести настилы на печать
+											</button>
+											<button class="generations-btn general-button">
+												Запустить генерацию
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ap-tabs__body tabs__body">
+								<div class="staff-box">
+									<div class="ap-tabs__body-heading">
+										<h2 class="ap-tabs__body-title">
+											Сотрудники
+										</h2>
+										<div class="ap-tabs__body-extra">
+											<button class="add-staff-btn add-btn" data-path="add-staff-modal" data-animation="fadeInUp" data-speed="500">Добавить +</button>
+											<div class="search__box" data-da=".staff-box, 767.98, 1">
+												<button class="search__btn">
+													<i class="_icon-magnifying-glass"></i>
+												</button>
+												<input class="search__input" type="search" placeholder="Поиск..." required>
+											</div>
+										</div>
+									</div>
+									<div id="staff">
+										<div class="staff-content">
+											<div class="staff-content-aside">
+												<p>ФИО</p>
+												<span>Уровень доступа</span>
+
+											</div>
+											<div data-spollers data-spollers-speed="1000" class="staff-spollers spollers" data-simplebar>
+												<details class="staff-spollers__item spollers__item">
+													<summary class="staff-spollers__title spollers__title">
+														<span class="staff-name">Владимиров Владимир Владимирович</span>
+														<span class="staff-department">Закройный отдел</span>
+
+													</summary>
+													<div class="staff-spollers__body spollers__body">
+														<div class="staff-spollers__content">
+															<div class="staff-info">
+																<div class="staff-info-box">
+																	<span class="staff-info-name">Логин</span>
+																	<span class="staff-info-data">LoGiN150930AooA</span>
+																</div>
+																<div class="staff-info-box">
+																	<span class="staff-info-name">Пароль</span>
+																	<div class="staff-info-data">
+																		<div class="staff-info-data-txt-box">
+																			<span class="staff-info-data-notext">****</span>
+																			<span class="staff-info-data-text" style="display:none">1234</span>
+																		</div>
+																		<button type="button" class="staff-info-data-btn">
+																			<i class="_icon-eye-slash"></i></button>
+																	</div>
+																</div>
+																<div class="staff-info-box">
+																	<span class="staff-info-name">Пин-код</span>
+																	<div class="staff-info-data">
+																		<div class="staff-info-data-txt-box">
+																			<span class="staff-info-data-notext">****</span>
+																			<span class="staff-info-data-text" style="display:none">1234</span>
+																		</div>
+																		<button type="button" class="staff-info-data-btn">
+																			<i class="_icon-eye-slash"></i></button>
+																	</div>
+																</div>
+															</div>
+															<div class="staff-change-box">
+																<button class="staff-change-del" data-path="del-modal" data-animation="fadeInUp" data-speed="500">
+																	<i class="_icon-trash"></i>
+																</button>
+																<button class="staff-change-modify" data-path="edit-staff-modal" data-animation="fadeInUp" data-speed="500">
+																	<i class="_icon-pencil">
+																	</i>
+																</button>
+															</div>
+														</div>
+													</div>
+												</details>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ap-tabs__body tabs__body">
+								<div class="stock-cut-box">
+									<div class="ap-tabs__body-heading">
+										<h2 class="ap-tabs__body-title">
+											Склад кроя
+										</h2>
+									</div>
+									<div class="table-tasks">
+										<div class="stock-heading">
+											<h2 class="stock-title">
+												Задания
+											</h2>
+											<div class="search__box">
+												<button class="search__btn">
+													<i class="_icon-magnifying-glass"></i>
+												</button>
+												<input class="search__input" type="search" placeholder="Поиск...">
+												<button class="search__filter" data-path="filter-modal" data-animation="fadeInUp" data-speed="500">
+													<i class="_icon-filter"></i>
+												</button>
+											</div>
+										</div>
+										<div class="scroll-table" id="table-tasks-mobi">
+											<table class="stock-table-top">
+												<thead>
+													<tr>
+														<th>Настил</th>
+														<th>Артикул</th>
+														<th>Размер</th>
+														<th>Кол-во</th>
+														<th>Статус</th>
+														<th>Разделить пачку</th>
+													</tr>
+												</thead>
+											</table>
+											<div class="scroll-table-body" id="table-tasks-desktop" data-simplebar>
+												<table class="stock-table">
+													<tbody>
+														<tr class="stock-tr">
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<p>Сформировано</p>
+															</td>
+															<td class="stock-td">
+																<button class="stock-td-tippy" data-path="split-modal" data-animation="fadeInUp" data-speed="500" data-tippy-content="11 - 12 - 13 - 12 - 15 - 16 - 11 - 11 - 11 - 11 - 11 - 11 - 11">11 - 12 - 13 - 12 - 15 - 16 -</button>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<p>Сформировано</p>
+															</td>
+															<td class="stock-td">
+																<button class="stock-td-tippy" data-path="split-modal" data-animation="fadeInUp" data-speed="500" data-tippy-content="11 - 12 - 13 - 12 - 15 - 16 - 11 - 11 - 11 - 11 - 11 - 11 - 11">11 - 12 - 13 - 12 - 15 - 16
+																	- 11 - 11 - 11 - 11 - 11 - 11 - 11</button>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<p>Сформировано</p>
+															</td>
+															<td class="stock-td">
+																<button class="stock-td-tippy" data-path="split-modal" data-animation="fadeInUp" data-speed="500" data-tippy-content="11 - 12 - 13 - 12 - 15 - 16 - 11 - 11 - 11 - 11 - 11 - 11 - 11">11 - 12 - 13 - 12 - 15 - 16
+																	- 11 - 11 - 11 - 11 - 11 - 11 - 11</button>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<p>Сформировано</p>
+															</td>
+															<td class="stock-td">
+																<button class="stock-td-tippy" data-path="split-modal" data-animation="fadeInUp" data-speed="500" data-tippy-content="11 - 12 - 13 - 12 - 15 - 16 - 11 - 11 - 11 - 11 - 11 - 11 - 11">11 - 12 - 13 - 12 - 15 - 16
+																	- 11 - 11 - 11 - 11 - 11 - 11 - 11</button>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<p>Сформировано</p>
+															</td>
+															<td class="stock-td">
+																<button class="stock-td-tippy" data-path="split-modal" data-animation="fadeInUp" data-speed="500" data-tippy-content="11 - 12 - 13 - 12 - 15 - 16 - 11 - 11 - 11 - 11 - 11 - 11 - 11">11 - 12 - 13 - 12 - 15 - 16
+																	- 11 - 11 - 11 - 11 - 11 - 11 - 11</button>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<p>Сформировано</p>
+															</td>
+															<td class="stock-td">
+																<button class="stock-td-tippy" data-path="split-modal" data-animation="fadeInUp" data-speed="500" data-tippy-content="11 - 12 - 13 - 12 - 15 - 16 - 11 - 11 - 11 - 11 - 11 - 11 - 11">11 - 12 - 13 - 12 - 15 - 16
+																	- 11 - 11 - 11 - 11 - 11 - 11 - 11</button>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<p>Сформировано</p>
+															</td>
+															<td class="stock-td">
+																<button class="stock-td-tippy" data-path="split-modal" data-animation="fadeInUp" data-speed="500" data-tippy-content="11 - 12 - 13 - 12 - 15 - 16 - 11 - 11 - 11 - 11 - 11 - 11 - 11">11 - 12 - 13 - 12 - 15 - 16
+																	- 11 - 11 - 11 - 11 - 11 - 11 - 11</button>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<p>Сформировано</p>
+															</td>
+															<td class="stock-td">
+																<button class="stock-td-tippy" data-path="split-modal" data-animation="fadeInUp" data-speed="500" data-tippy-content="11 - 12 - 13 - 12 - 15 - 16 - 11 - 11 - 11 - 11 - 11 - 11 - 11">11 - 12 - 13 - 12 - 15 - 16
+																	- 11 - 11 - 11 - 11 - 11 - 11 - 11</button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div class="summary-table">
+										<div class="stock-heading">
+											<h2 class="stock-title">
+												Сводная таблица
+											</h2>
+											<div class="search__box">
+												<button class="search__btn">
+													<i class="_icon-magnifying-glass"></i>
+												</button>
+												<input class="search__input" type="search" placeholder="Поиск...">
+												<button class="search__filter" data-path="filter-modal" data-animation="fadeInUp" data-speed="500">
+													<i class="_icon-filter"></i>
+												</button>
+											</div>
+										</div>
+										<div class="scroll-table" id="summary-table-mobi">
+											<table class="stock-table-top">
+												<thead>
+													<tr>
+														<th>№</th>
+														<th>Настил</th>
+														<th>Артикул</th>
+														<th>Размер</th>
+														<th>Кол-во</th>
+														<th>Дата и время</th>
+													</tr>
+												</thead>
+											</table>
+											<div class="scroll-table-body" id="scroll-table-desktop" data-simplebar>
+												<table class="stock-table">
+													<tbody>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+														<tr class="stock-tr">
+															<td class="stock-td">0000</td>
+															<td class="stock-td">0000/0</td>
+															<td class="stock-td">00000/черный</td>
+															<td class="stock-td">XL/000</td>
+															<td class="stock-td">0000</td>
+															<td class="stock-td">
+																<time>00/00/0000
+																	00:00</time>
+															</td>
+														</tr>
+
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240315155839"></script>
+	</div>
+	<div class="common-modal">
+
+		<!-- Удаление сотрудника -->
+		<div class="common-modal-container del-modal-container" aria-modal="true" data-target="del-modal">
+			<button class="common-modal-close js-modal-close" aria-label="Закрыть модальное окно">
+				<i class="_icon-x-mark"></i>
+			</button>
+			<div class="common-modal-content del-modal-content">
+				<div class="common-modal-heading">
+					<h2 class="common-modal-title">
+						Удалить сотрудника
+					</h2>
+				</div>
+				<p class="del-modal-text">
+					Вы точно хотите удалить сотрудника?
+				</p>
+				<div class="common-modal-btn-box">
+					<button class="common-modal-btn modal-del-btn">
+						Удалить
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Добавление сотрудника -->
+		<div class="common-modal-container add-staff-modal-container" aria-modal="true" data-target="add-staff-modal">
+			<button class="common-modal-close js-modal-close" aria-label="Закрыть модальное окно">
+				<i class="_icon-x-mark"></i>
+			</button>
+			<div class="common-modal-content add-staff-modal-content">
+				<div class="common-modal-heading">
+					<h2 class="common-modal-title">
+						Добавить нового сотрудника
+					</h2>
+				</div>
+				<div class="add-staff-modal-box">
+					<form class="add-staff-modal-form">
+						<div class="add-staff-group-input">
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="firstname">ФИО</label>
+								<input class="global-text-field__input" type="text" name="firstname" required="">
+							</div>
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="login">Логин</label>
+								<input class="global-text-field__input" type="text" name="login" required="">
+							</div>
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="password">Пароль</label>
+								<div class="form__line-password form__line global-text-field">
+									<input class="global-text-field__input authorization__pass" autocomplete="off" type="password" name="form[]" value="">
+									<button class="form__viewpass _icon-eye-slash" type="button">
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="add-staff-group-options">
+							<p class="options__title">
+								Уровень доступа
+							</p>
+							<div class="options">
+								<div class="options__item">
+									<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+									<label for="o_1" class="options__label"><span class="options__text">Администратор</span></label>
+								</div>
+								<div class="options__item">
+									<input id="o_2" class="options__input" type="radio" value="2" name="option">
+									<label for="o_2" class="options__label"><span class="options__text">Закройный
+											отдел</span></label>
+								</div>
+								<div class="options__item">
+									<input id="o_3" class="options__input" type="radio" value="2" name="option">
+									<label for="o_3" class="options__label"><span class="options__text">Ручники</span></label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="common-modal-btn-box">
+					<button class="modal-btn general-button">
+						Добавить
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Изменить сотрудника -->
+		<div class="common-modal-container edit-staff-modal-container" aria-modal="true" data-target="edit-staff-modal">
+			<button class="common-modal-close js-modal-close" aria-label="Закрыть модальное окно">
+				<i class="_icon-x-mark"></i>
+			</button>
+			<div class="common-modal-content edit-staff-modal-content">
+				<div class="common-modal-heading">
+					<h2 class="common-modal-title">
+						Изменить данные сотрудника
+					</h2>
+				</div>
+				<div class="edit-staff-modal-box">
+					<form class="edit-staff-modal-form">
+						<div class="edit-staff-group-input">
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="firstname">ФИО</label>
+								<input class="global-text-field__input" type="text" name="firstname" required="">
+							</div>
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="login">Логин</label>
+								<input class="global-text-field__input" type="text" name="login" required="">
+							</div>
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="password">Пин-код</label>
+								<div class="form__line-password form__line global-text-field">
+									<input class="global-text-field__input authorization__pass" autocomplete="off" type="password" name="form[]" value="">
+									<button class="form__viewpass _icon-eye-slash" type="button">
+									</button>
+								</div>
+							</div>
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="password">Пароль</label>
+								<div class="form__line-password form__line global-text-field">
+									<input class="global-text-field__input authorization__pass" autocomplete="off" type="password" name="form[]" value="">
+									<button class="form__viewpass _icon-eye-slash" type="button">
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="edit-staff-group-options">
+							<p class="options__title">
+								Уровень доступа
+							</p>
+							<div class="options">
+								<div class="options__item">
+									<input id="e_1" class="options__input" checked type="radio" value="1" name="option">
+									<label for="e_1" class="options__label"><span class="options__text">Администратор</span></label>
+								</div>
+								<div class="options__item">
+									<input id="e_2" class="options__input" type="radio" value="2" name="option">
+									<label for="e_2" class="options__label"><span class="options__text">Закройный
+											отдел</span></label>
+								</div>
+								<div class="options__item">
+									<input id="e_3" class="options__input" type="radio" value="2" name="option">
+									<label for="e_3" class="options__label"><span class="options__text">Ручники</span></label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="common-modal-btn-box">
+					<button class="modal-btn general-button">
+						Сохранить
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Фильтер -->
+		<div class="common-modal-container filter-modal-container" aria-modal="true" data-target="filter-modal">
+			<button class="common-modal-close js-modal-close" aria-label="Закрыть модальное окно">
+				<i class="_icon-x-mark"></i>
+			</button>
+			<div class="common-modal-content filter-modal-content">
+				<div class="common-modal-heading">
+					<h2 class="common-modal-title">
+						Фильтр поиска
+					</h2>
+				</div>
+				<div class="filter-modal-box">
+					<form class="filter-modal-form">
+						<div class="filter-group-input">
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="decking">Настил</label>
+								<input class="global-text-field__input" type="text" name="decking" required="">
+							</div>
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="article">Артикул</label>
+								<input class="global-text-field__input" type="text" name="article" required="">
+							</div>
+							<div class="global-text-field">
+								<label class="global-text-field__label" for="size">Размер</label>
+								<input class="global-text-field__input" type="text" name="size" required="">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="common-modal-btn-box filter-btn-box">
+					<button class="filter-reset add-btn">
+						Сбросить
+					</button>
+					<button class="modal-btn general-button">
+						Поиск
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Разделить пачку -->
+		<div class="common-modal-container split-modal-container" aria-modal="true" data-target="split-modal">
+			<button class="common-modal-close js-modal-close" aria-label="Закрыть модальное окно">
+				<i class="_icon-x-mark"></i>
+			</button>
+			<div class="common-modal-content split-modal-content">
+				<div class="common-modal-heading">
+					<h2 class="common-modal-title">
+						Разделить пачку
+					</h2>
+				</div>
+				<div class="split-pack-box">
+					<table class="split-pack-table">
+						<thead class="split-pack-thead">
+							<tr class="split-pack-tr">
+								<th class="split-pack-th">Настил</th>
+								<th class="split-pack-th">Артикул</th>
+								<th class="split-pack-th">Размер</th>
+								<th class="split-pack-th">Кол-во</th>
+							</tr>
+						</thead>
+						<tbody class="split-pack-tbody">
+							<tr class="split-pack-tr">
+								<td class="split-pack-td">0000/0</td>
+								<td class="split-pack-td">00000/черный</td>
+								<td class="split-pack-td">XL/000</td>
+								<td class="split-pack-td">0000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="common-modal-btn-box filter-btn-box">
+					<button class="filter-reset add-btn" data-path="split-manually" data-animation="fadeInUp" data-speed="500">
+						Разделить вручную
+					</button>
+					<button class="split-btn modal-btn general-button" data-path="auto-split" data-animation="fadeInUp" data-speed="500">
+						Авто разбив
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Авто разбив -->
+		<div class="common-modal-container split-modal-container" aria-modal="true" data-target="auto-split">
+			<button class="common-modal-close js-modal-close" aria-label="Закрыть модальное окно">
+				<i class="_icon-x-mark"></i>
+			</button>
+			<div class="common-modal-content split-modal-content">
+				<div class="common-modal-heading">
+					<button class="_icon-arrow-left" data-path="split-modal" data-animation="fadeInUp" data-speed="500"></button>
+					<h2 class="common-modal-title">
+						Авто разбив
+					</h2>
+				</div>
+				<div class="split-pack-box">
+					<table class="split-pack-table">
+						<thead class="split-pack-thead">
+							<tr class="split-pack-tr">
+								<th class="split-pack-th">Настил</th>
+								<th class="split-pack-th">Артикул</th>
+								<th class="split-pack-th">Размер</th>
+								<th class="split-pack-th">Кол-во</th>
+							</tr>
+						</thead>
+						<tbody class="split-pack-tbody">
+							<tr class="split-pack-tr">
+								<td class="split-pack-td">0000/0</td>
+								<td class="split-pack-td">00000/черный</td>
+								<td class="split-pack-td">XL/000</td>
+								<td class="split-pack-td">0000</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="split-pack-input-box">
+						<div class="global-text-field">
+							<label class="global-text-field__label" for="quantitypacks">Количество пачек, шт</label>
+							<input class="global-text-field__input" type="number" name="quantitypacks" required="">
+						</div>
+						<div class="global-text-field">
+							<label class="global-text-field__label" for="quantityper">Количество в одной пачке, шт</label>
+							<input class="global-text-field__input" type="number" name="quantityper" required="">
+						</div>
+					</div>
+				</div>
+				<div class="common-modal-btn-box">
+					<button class="split-btn modal-btn general-button">
+						Подтвердить
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Разделить вручную -->
+		<div class="common-modal-container split-modal-container" aria-modal="true" data-target="split-manually">
+			<button class="common-modal-close js-modal-close" aria-label="Закрыть модальное окно">
+				<i class="_icon-x-mark"></i>
+			</button>
+			<div class="common-modal-content split-modal-content">
+				<div class="common-modal-heading">
+					<button class="_icon-arrow-left" data-path="split-modal" data-animation="fadeInUp" data-speed="500"></button>
+					<h2 class="common-modal-title">
+						Разделить вручную
+					</h2>
+				</div>
+				<div class="split-pack-box">
+					<table class="split-pack-table">
+						<thead class="split-pack-thead">
+							<tr class="split-pack-tr">
+								<th class="split-pack-th">Настил</th>
+								<th class="split-pack-th">Артикул</th>
+								<th class="split-pack-th">Размер</th>
+								<th class="split-pack-th">Кол-во</th>
+							</tr>
+						</thead>
+						<tbody class="split-pack-tbody">
+							<tr class="split-pack-tr">
+								<td class="split-pack-td">0000/0</td>
+								<td class="split-pack-td">00000/черный</td>
+								<td class="split-pack-td">XL/000</td>
+								<td class="split-pack-td">0000</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="split-pack-input-box">
+						<div class="global-text-field">
+							<label class="global-text-field__label" for="quantitypacks">Количество пачек, шт</label>
+							<input class="global-text-field__input quantitypacks-field" type="number" name="quantitypacks" required="">
+						</div>
+					</div>
+					<div class="split-pack-mini-input-box" style="display: none;">
+						<!-- <div class="global-mini-text-field _global-form-error">
+							<label class="global-mini-text-field__label" for="quantitypacks">1</label>
+							<input class="global-mini-text-field__input" type="text" name="quantitypacks" maxlength="2">
+						</div> -->
+					</div>
+				</div>
+				<div class="common-modal-btn-box">
+					<button class="split-btn modal-btn general-button">
+						Подтвердить
+					</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Стили для body -->
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: opacity 0.5s ease 0s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+		<!-- Документация: https://template.fls.guru/template-docs/modul-preloader.html -->
+		<!-- Стили для прелоадера -->
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			html {
+				overflow: hidden;
+				touch-action: none;
+				overscroll-behavior: none;
+			}
+
+			/* Головний блок */
+			.fls-preloader {
+				pointer-events: none;
+				z-index: -1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			/* Блок с елементами */
+			.fls-preloader__body {
+				padding: 0.93rem;
+				max-width: 31.25rem;
+				display: flex;
+				flex-direction: column;
+			}
+
+			/* Блок со счетчиком */
+			.fls-preloader__counter {
+				font-size: 10rem;
+				font-weight: 500;
+				line-height: 1.5;
+				color: #ff6a00;
+			}
+
+			@media (max-width: 768px) {
+				.fls-preloader__counter {
+					font-size: 3rem;
+				}
+			}
+
+			/* Прогресбар */
+			.fls-preloader__line {}
+
+			/* Линия прогрессбора */
+			.fls-preloader__line span {
+				display: inline-block;
+				transition: width 0.2s ease;
+				height: 0.8rem;
+				border-radius: 20px;
+				background-color: #ff6a00;
+			}
+		</style>
+		<!-- Скрипт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				if (preloaderImages.length) {
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const
+						preloader = document.querySelector('.fls-preloader'),
+						showPecentLoad = document.querySelector('.fls-preloader__counter'),
+						showLineLoad = document.querySelector('.fls-preloader__line span'),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = counter = progress = 0;
+
+					htmlDocument.classList.add('loading');
+					htmlDocument.classList.add('lock');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null;
+						showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+						const intervalId = setInterval(() => {
+							counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 10);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add('loaded');
+						htmlDocument.classList.remove('lock');
+						htmlDocument.classList.remove('loading');
+						setInterval(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+
+	<script src="js/app.min.js?_v=20240315155839"></script>
+
+</body>
+
+</html>
